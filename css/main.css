@@ -32,9 +32,11 @@ form {
 
 #exoplanet-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 #item-jupiter-mass {
+  flex: 1 0 28%;
   background-image: url(../images/jupiter.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -49,6 +51,7 @@ form {
 }
 
 #item-earth-mass {
+  flex: 1 0 28%;
   background-image: url(../images/earth.png);
   background-repeat: no-repeat;
   background-position: right;
