@@ -34,7 +34,7 @@ const makeItemDiv = function (identifierText, distanceName,
 
 const makeIdentifierDiv = function (id) {
   const ident = document.createElement('h2');
-  ident.textContent = `Planet Identifier: ${id.toUpperCase}`;
+  ident.textContent = `Planet Identifier: ${id.toUpperCase()}`;
   return ident;
 }
 
