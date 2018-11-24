@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const form = document.querySelector('#new-item-form');
   form.addEventListener('submit', handleFormSubmit);
+
+  const deleteAllButton = document.querySelector('#delete-all');
+  deleteAllButton.addEventListener('click', handleDeleteAll);
 })
 
 const handleFormSubmit = function (event) {
@@ -25,7 +28,12 @@ const handleFormSubmit = function (event) {
 const makeItemDiv = function (identifierText, distanceName,
   classText, fractionText) {
   const itemDiv = document.createElement('div');
-  itemDiv.setAttribute("id", "item-div");
+  if (classText === "Earth Masses") {
+    itemDiv.setAttribute("id", "item-earth-mass");
+  };
+  if (classText === "Jupiter Masses") {
+    itemDiv.setAttribute("id", "item-jupiter-mass");
+  };
   itemDiv.appendChild( makeIdentifierDiv(identifierText) );
   itemDiv.appendChild( makeDistanceDiv(distanceName) );
   itemDiv.appendChild( makeClassDiv(classText, fractionText) );
@@ -48,4 +56,9 @@ const makeClassDiv = function (planetClass, massFrac) {
   const planetMass = document.createElement('h4');
   planetMass.textContent = `Planet mass: ${massFrac} ${planetClass}.`;
   return planetMass;
+}
+
+const handleDeleteAll = function (event) {
+  const readingList = document.querySelector('#exoplanet-list');
+  readingList.innerHTML = '';
 }
