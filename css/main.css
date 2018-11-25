@@ -35,9 +35,8 @@ form {
   flex-wrap: wrap;
 }
 
-#item-jupiter-mass-1 {
+.exoplanet-list-item {
   flex: 1 0 28%;
-  background-image: url(../images/gas_planets/Gas-planet.png);
   background-repeat: no-repeat;
   background-position: right;
   background-color: black;
@@ -48,159 +47,53 @@ form {
   margin: 10px;
   opacity: 0.8;
   padding: 10px;
+}
+
+#item-jupiter-mass-1 {
+  background-image: url(../images/gas_planets/Gas-planet.png);
 }
 
 #item-jupiter-mass-2 {
-  flex: 1 0 28%;
   background-image: url(../images/gas_planets/gas-planet2.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-color: black;
-  background-size: contain;
-  color: antiquewhite;
-  border-radius: 25px;
-  border: 1px solid antiquewhite;
-  margin: 10px;
-  opacity: 0.8;
-  padding: 10px;
 }
 
 #item-jupiter-mass-3 {
-  flex: 1 0 28%;
   background-image: url(../images/gas_planets/gas-planet3.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-color: black;
-  background-size: contain;
-  color: antiquewhite;
-  border-radius: 25px;
-  border: 1px solid antiquewhite;
-  margin: 10px;
-  opacity: 0.8;
-  padding: 10px;
 }
 
 #item-jupiter-mass-4 {
-  flex: 1 0 28%;
   background-image: url(../images/gas_planets/gas-planet4.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-color: black;
-  background-size: contain;
-  color: antiquewhite;
-  border-radius: 25px;
-  border: 1px solid antiquewhite;
-  margin: 10px;
-  opacity: 0.8;
-  padding: 10px;
 }
 
 #item-jupiter-mass-5 {
-  flex: 1 0 28%;
   background-image: url(../images/gas_planets/Jupiter.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-color: black;
-  background-size: contain;
-  color: antiquewhite;
-  border-radius: 25px;
-  border: 1px solid antiquewhite;
-  margin: 10px;
-  opacity: 0.8;
-  padding: 10px;
 }
 
 #item-earth-mass-1 {
-  flex: 1 0 28%;
   background-image: url(../images/rocky_planets/earth.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-color: black;
-  background-size: contain;
-  color: antiquewhite;
-  border-radius: 25px;
-  border: 1px solid antiquewhite;
-  padding: 10px;
-  margin: 10px;
-  opacity: 0.8;
 }
 
 
 #item-earth-mass-2 {
-  flex: 1 0 28%;
   background-image: url(../images/rocky_planets/ceres.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-color: black;
-  background-size: contain;
-  color: antiquewhite;
-  border-radius: 25px;
-  border: 1px solid antiquewhite;
-  padding: 10px;
-  margin: 10px;
-  opacity: 0.8;
 }
 
 
 #item-earth-mass-3 {
-  flex: 1 0 28%;
   background-image: url(../images/rocky_planets/eris.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-color: black;
-  background-size: contain;
-  color: antiquewhite;
-  border-radius: 25px;
-  border: 1px solid antiquewhite;
-  padding: 10px;
-  margin: 10px;
-  opacity: 0.8;
 }
 
 
 #item-earth-mass-4 {
-  flex: 1 0 28%;
   background-image: url(../images/rocky_planets/makemake.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-color: black;
-  background-size: contain;
-  color: antiquewhite;
-  border-radius: 25px;
-  border: 1px solid antiquewhite;
-  padding: 10px;
-  margin: 10px;
-  opacity: 0.8;
 }
 
 
 #item-earth-mass-5 {
-  flex: 1 0 28%;
   background-image: url(../images/rocky_planets/pluto.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-color: black;
-  background-size: contain;
-  color: antiquewhite;
-  border-radius: 25px;
-  border: 1px solid antiquewhite;
-  padding: 10px;
-  margin: 10px;
-  opacity: 0.8;
 }
 
 
 #item-earth-mass-6 {
-  flex: 1 0 28%;
   background-image: url(../images/rocky_planets/rockyplanet.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-color: black;
-  background-size: contain;
-  color: antiquewhite;
-  border-radius: 25px;
-  border: 1px solid antiquewhite;
-  padding: 10px;
-  margin: 10px;
-  opacity: 0.8;
 }

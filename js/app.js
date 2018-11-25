@@ -29,11 +29,13 @@ const makeItemDiv = function (identifierText, distanceName,
   classText, fractionText) {
   const itemDiv = document.createElement('div');
   if (classText === "Earth Masses") {
+    itemDiv.setAttribute("class", "exoplanet-list-item");
     let randNo = randomNumber(1, 7);
     let earthMassString = `item-earth-mass-${randNo}`
     itemDiv.setAttribute("id", earthMassString);
   };
   if (classText === "Jupiter Masses") {
+    itemDiv.setAttribute("class", "exoplanet-list-item");
     let randNo = randomNumber(1, 6);
     let jupiterMassString = `item-jupiter-mass-${randNo}`
     itemDiv.setAttribute("id", jupiterMassString);
