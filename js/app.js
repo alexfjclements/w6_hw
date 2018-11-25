@@ -29,15 +29,25 @@ const makeItemDiv = function (identifierText, distanceName,
   classText, fractionText) {
   const itemDiv = document.createElement('div');
   if (classText === "Earth Masses") {
-    itemDiv.setAttribute("id", "item-earth-mass");
+    let randNo = randomNumber(1, 7);
+    let earthMassString = `item-earth-mass-${randNo}`
+    itemDiv.setAttribute("id", earthMassString);
   };
   if (classText === "Jupiter Masses") {
-    itemDiv.setAttribute("id", "item-jupiter-mass");
+    let randNo = randomNumber(1, 6);
+    let jupiterMassString = `item-jupiter-mass-${randNo}`
+    itemDiv.setAttribute("id", jupiterMassString);
   };
   itemDiv.appendChild( makeIdentifierDiv(identifierText) );
   itemDiv.appendChild( makeDistanceDiv(distanceName) );
   itemDiv.appendChild( makeClassDiv(classText, fractionText) );
   return itemDiv;
+}
+
+const randomNumber = function (min, max) {
+  let minimum = Math.ceil(min);
+  let maximum = Math.floor(max);
+  return Math.floor(Math.random() * (maximum - minimum)) + minimum;
 }
 
 const makeIdentifierDiv = function (id) {
