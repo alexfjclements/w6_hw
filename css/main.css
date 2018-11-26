@@ -37,6 +37,7 @@ form {
 
 .exoplanet-list-item {
   flex: 1 0 28%;
+  height: 11rem;
   background-repeat: no-repeat;
   background-position: right;
   background-color: black;
